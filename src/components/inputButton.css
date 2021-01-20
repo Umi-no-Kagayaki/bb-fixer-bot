@@ -1,0 +1,9 @@
+button {
+    position: relative;
+  
+    margin: auto;
+  
+    display: inline;
+  
+    background-color: rgb(255, 225, 225);
+}
