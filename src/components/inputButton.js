@@ -1,12 +1,11 @@
 import "./inputButton.css";
-import setState from "../functions/setState";
 
 const InputButton = (props) => {
     return (
         <button
-            onClick = {() => {setState(props.setState)}}
+            onClick = {() => {props.onClick(props.page)}}
         >
-            入力
+            {props.value}
         </button>
     );
 }

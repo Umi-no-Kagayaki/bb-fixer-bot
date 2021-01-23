@@ -1,10 +1,12 @@
 import { useState } from "react";
 import './App.css';
-import Home from "./components/comment";
+import Log from "./components/Log";
+import Input from "./components/input";
 import InputButton from "./components/inputButton";
 
 function App() {
   const [page, setPage] = useState("home");
+  const [inputed, setInputed] = useState("ここに口汚く入力");
 
   return (
     <div
@@ -22,8 +24,12 @@ function App() {
       >
         {
           page === "home" ?
-            <Home /> :
-            <div></div>
+            <Log /> :
+            <Input
+              value = {inputed}
+              
+              onChange = {setInputed}
+            />
         }
       </body>
 
@@ -32,8 +38,8 @@ function App() {
       >
         {
           page === "home" ?
-            <InputButton setState = {setPage}/> :
-            <div></div>
+            <InputButton onClick = {setPage} page = {""} value = "入力" /> :
+            <InputButton onClick = {setPage} page = {"home"} value = "完了" />
         }
       </footer>
     </div>
