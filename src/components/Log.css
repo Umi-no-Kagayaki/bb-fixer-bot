@@ -1,3 +1,12 @@
+div.comment {
+    height: 254px;
 
-  
-  
+    width: 200px;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    color: black;
+
+    background-color: white;
+}

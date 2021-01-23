@@ -1,8 +1,12 @@
 import "./Log.css";
 
-const Log = () => {
+const Log = (props) => {
     return(
-        <div></div>
+        <div
+            className = "comment"
+        >
+            {props.comment}
+        </div>
     );
 };
 

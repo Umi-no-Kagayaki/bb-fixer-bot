@@ -9,30 +9,39 @@ div.bot {
 }
 
 header.bot-header {
-    margin-top: 0;
-  
-    height: 25px;
-  
-    width: 100%;
-  
-    line-height: 25px;
-  
-    text-align: center;
+  margin-top: 0;
 
-    font-size: 12px;
+  border: 2px solid black;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   
-    color: white;
+  height: 23px;
   
-    background-color: rgb(100, 75, 75);
+  width: 246px;
+  
+  line-height: 25px;
+  
+  text-align: center;
+
+  font-size: 12px;
+  
+  color: white;
+  
+  background-color: rgb(100, 75, 75);
 }
 
 body.bot-body {
   margin-top: 0;
   margin-bottom: 0;
 
+  border: 2px solid black;
+  border-top: none;
+  border-bottom: none;
+
   height: 354px;
 
-  width: 250px;
+  width: 246px;
 
   background-color: rgb(255, 225, 225);
   display: flex;
@@ -44,9 +53,16 @@ body.bot-body {
 }
   
 footer.bot-footer {
-    height: 25px;
+  border: 2px solid black;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  height: 23px;
   
-    width: 100%;
+  width: 246px;
+
+  line-height: 20px;
   
-    background-color: rgb(100, 75, 75);
+  background-color: rgb(100, 75, 75);
 }

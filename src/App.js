@@ -24,7 +24,9 @@ function App() {
       >
         {
           page === "home" ?
-            <Log /> :
+            <Log
+              comment = {inputed}
+            /> :
             <Input
               value = {inputed}
               
